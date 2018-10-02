@@ -1,5 +1,5 @@
 //
-// main.tf -- Contains the infrastructure configuration that will be created.
+// network.tf -- Contains the infrastructure configuration that will be created.
 // Variables can be found in vars.tf
 //
 
