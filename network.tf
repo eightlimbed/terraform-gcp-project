@@ -1,6 +1,5 @@
 //
-// network.tf -- Contains the infrastructure configuration that will be created.
-// Variables can be found in vars.tf
+// network.tf -- Configuration for a GPC VPC with Subnet and Firewall Rules
 //
 
 // Configure GCP
@@ -14,7 +13,7 @@ provider "google" {
 // Create VPC
 resource "google_compute_network" "vpc" {
     name                    = "${var.name}-vpc"
-    auto_create_subnetworks = "false" // Manually create Subnet (see below)
+    auto_create_subnetworks = "false"
 }
 
 // Create Subnet
