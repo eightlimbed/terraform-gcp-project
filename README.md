@@ -13,6 +13,12 @@ running NGINX.
 
 Live demo: [https://terralee.cf](terralee.cf)
 
+##### Files
+Name | Description
+--- | ---
+`app.yaml` | Configuration for an App Engine application
+`main.go` | Go web application that show metadata about instances
+
 ##### TODO
 - Use a configuration management tool to configure the instance after its
   provisioned
