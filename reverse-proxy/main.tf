@@ -11,8 +11,8 @@ provider "google" {
 }
 
 // VM Instance Configuration
-resource "google_compute_instance" "nginx" {
-    name         = "nginx"
+resource "google_compute_instance" "default" {
+    name         = "default"
     machine_type = "n1-standard-1"
     zone         = "${var.gcp_zone}"
 
