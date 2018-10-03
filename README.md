@@ -6,6 +6,11 @@ infrastructure includes:
 - NGINX instance (reverse proxy)
 - App Engine web application (load-balanced with 3 replicas)
 
+![screenshot](https://storage.googleapis.com/terraform-nginx-app.appspot.com/lb.gif)
+
+##### URL
+Access the web app here: [hellpgcp.cf](https://hellogcp.cf/)
+
 ##### Architecture
 ```
 Internet --> NGINX reverse proxy --> Load-balanced App Engine app (3 instances)
