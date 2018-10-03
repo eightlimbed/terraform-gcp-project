@@ -11,7 +11,7 @@ running NGINX.
     - Set up an SSL certificate using letsencrypt
     - Port 443 should serve some custom content
 
-Live demo: [https://terralee.cf](terralee.cf)
+Live demo: [terralee.cf](https://terralee.cf)
 
 ##### Files
 Name | Description
