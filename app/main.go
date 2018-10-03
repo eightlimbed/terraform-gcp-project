@@ -40,7 +40,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
-    fmt.Fprintf(w, "This message is server by...\n%s [%s] at %s", name, id, ip)
+    fmt.Fprintf(w, "This message is served by...\n\nName: %s\nInstanceID: %s\nIP Address: %s\n", name, id, ip)
 }
 
 func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
