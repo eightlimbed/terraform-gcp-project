@@ -2,7 +2,7 @@
 // vars.tf -- Contains variables that are used in the other .tf config files
 //
 
-variable "credentials" { default = "credentials.json" }
+variable "credentials" { default = "../credentials.json" }
 variable "gcp_project" { default = "terraform-nginx-app" }
 variable "name"        { default = "dev" }
 variable "gcp_region"  { default = "us-west1" }
