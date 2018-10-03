@@ -6,6 +6,11 @@ infrastructure includes:
 - NGINX Reverse Proxy instance
 - Load-balanced App Engine web application
 
+##### Architecture
+```
+Internet --> NGINX reverse proxy --> Load-balanced App Engine app (3 instances)
+```
+
 ##### Objectives
 - Use Terraform to create a new VPC in GCP
 - Use Terraform to provision a new VM Instance
