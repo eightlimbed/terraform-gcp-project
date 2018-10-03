@@ -7,18 +7,18 @@ infrastructure includes:
 - App Engine web application (load-balanced with 3 replicas)
 
 ![screenshot](https://storage.googleapis.com/terraform-nginx-app.appspot.com/lb.gif)
+
 Access the web app here: [hellpgcp.cf](https://hellogcp.cf/)
 
-##### Architecture
+#### Architecture
 ```
 Internet --> NGINX reverse proxy --> Load-balanced App Engine app (3 instances)
 ```
 
-##### Repo Structure
+#### File Information
 Dir/File | Description
 --- | ---
 `app/` | Contains the Go web application and App Engine config
 `network/` | Contains codified infrastructure to set up VPC, subnet and firewall
 `reverse-proxy/` | Contains codified infrastructure to set up a VM instance
-`reverse-proxy/init.sh` | Bash script to configure VM instance with NGINX and
-Certbot
+`reverse-proxy/init.sh` | Bash script to configure VM instance with NGINX and Certbot
