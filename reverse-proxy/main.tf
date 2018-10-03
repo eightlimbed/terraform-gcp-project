@@ -1,6 +1,14 @@
 //
-// nginx.tf: Configuration for a GCP VM Instance running nginx
+// main.tf: Configuration for a GCP VM Instance running nginx
 //
+
+// GCP Configuration
+provider "google" {
+    version     = "~> 1.18"
+    credentials = "${file("${var.credentials}")}"
+    project     = "${var.gcp_project}"
+    region      = "${var.gcp_region}"
+}
 
 // VM Instance Configuration
 resource "google_compute_instance" "nginx" {

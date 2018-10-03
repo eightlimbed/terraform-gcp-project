@@ -1,6 +1,14 @@
 //
-// network.tf -- Configuration for a GPC VPC with Subnet and Firewall Rules
+// main.tf -- Configuration for a GPC VPC with Subnet and Firewall Rules
 //
+
+// GCP Configuration
+provider "google" {
+    version     = "~> 1.18"
+    credentials = "${file("${var.credentials}")}"
+    project     = "${var.gcp_project}"
+    region      = "${var.gcp_region}"
+}
 
 // Create VPC
 resource "google_compute_network" "vpc" {
