@@ -1,7 +1,10 @@
 ### Terraform GCP Project
-The goal of this project is to use Terraform to create a new Virtual Private
-Cloud (VPC) in Google Cloud Platform (GCP) and provision a single instance
-running NGINX.
+The goal of this project is to use Google Cloud Platform (GCP) and Terraform to
+create and codify infrastructure for a simple web application. The
+infrastructure includes:
+- Networking (VPC, Subnet, Firewalls)
+- NGINX Reverse Proxy instance
+- Load-balanced App Engine web application
 
 ##### Objectives
 - Use Terraform to create a new VPC in GCP
@@ -18,6 +21,7 @@ Name | Description
 --- | ---
 `app.yaml` | Configuration for an App Engine application
 `main.go` | Go web application that show metadata about instances
+`revproxy-init.sh` | Bash script to configure the reverse proxy instance
 
 ##### TODO
 - Use a configuration management tool to configure the instance after its
